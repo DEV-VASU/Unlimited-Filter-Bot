@@ -30,8 +30,22 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Command Help", callback_data="help_data")
-                ]
+                    InlineKeyboardButton("🔎 How to Use? Commands Menu", callback_data="help_data")
+                ],
+                [
+                    InlineKeyboardButton("✚ 𝙉𝙮𝙤𝙢𝙞", url=f"http://t.me/NyomiBot?startgroup=start")
+                    InlineKeyboardButton("✚ 𝙉𝙖𝙣𝙘𝙮", url=f"http://t.me/NancyRobot?startgroup=start")
+                ],
+                [
+                    InlineKeyboardButton("✚ Add me to your Group", url=f"http://t.me/MovieGroupsBot?startgroup=start")
+                ],
+                [
+                    InlineKeyboardButton("👤 Bot Owner", user_id = 1926090919)
+                    InlineKeyboardButton("💡 About Me", callback_data="about_data")
+                ],
+                [
+                InlineKeyboardButton("❌ CLOSE", callback_data="close_data"),
+                ],
             ]
         )
 
@@ -47,13 +61,16 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("How to Deploy?", url="https://youtu.be/hkmc3e7U7R4"),
-                    InlineKeyboardButton("About Me", callback_data="about_data")
+                    InlineKeyboardButton("✚ Add me to your Group", url=f"http://t.me/MovieGroupsBot?startgroup=start"),
+                    
                 ],
                 [
-                    InlineKeyboardButton("BOT Channel", url="https://t.me/TroJanzHEX"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/TroJanzSupport")
-                ]
+                    InlineKeyboardButton("💡 About Me", callback_data="about_data")
+                    InlineKeyboardButton("📨 Channel", url="https://t.me/VasuBots"),
+                ],
+                [
+                    InlineKeyboardButton("🔙 Back", callback_data="start_data"),
+                ],
             ]
         )
 
@@ -70,7 +87,7 @@ async def cb_handler(client, query):
             [
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Unlimited-Filter-Bot")
+                        "❤️ More Bots ❤️", url="https://t.me/VasuBots")
                 ],
                 [
                     InlineKeyboardButton("BACK", callback_data="help_data"),
