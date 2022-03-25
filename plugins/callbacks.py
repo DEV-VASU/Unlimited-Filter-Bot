@@ -33,14 +33,14 @@ async def cb_handler(client, query):
                     InlineKeyboardButton("🔎 How to Use? Commands Menu", callback_data="help_data")
                 ],
                 [
-                    InlineKeyboardButton("✚ 𝙉𝙮𝙤𝙢𝙞", url=f"http://t.me/NyomiBot?startgroup=start")
+                    InlineKeyboardButton("✚ 𝙉𝙮𝙤𝙢𝙞", url=f"http://t.me/NyomiBot?startgroup=start"),
                     InlineKeyboardButton("✚ 𝙉𝙖𝙣𝙘𝙮", url=f"http://t.me/NancyRobot?startgroup=start")
                 ],
                 [
                     InlineKeyboardButton("✚ Add me to your Group", url=f"http://t.me/MovieGroupsBot?startgroup=start")
                 ],
                 [
-                    InlineKeyboardButton("👤 Bot Owner", user_id = 1926090919)
+                    InlineKeyboardButton("👤 Bot Owner", user_id = 1926090919),
                     InlineKeyboardButton("💡 About Me", callback_data="about_data")
                 ],
                 [
@@ -65,7 +65,7 @@ async def cb_handler(client, query):
                     
                 ],
                 [
-                    InlineKeyboardButton("💡 About Me", callback_data="about_data")
+                    InlineKeyboardButton("💡 About Me", callback_data="about_data"),
                     InlineKeyboardButton("📨 Channel", url="https://t.me/VasuBots"),
                 ],
                 [
